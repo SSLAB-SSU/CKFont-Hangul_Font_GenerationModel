@@ -2,6 +2,8 @@
 ## 한글 조합성에 기반한 최소 글자를 사용하는 한글 폰트 생성 모델 (2021. 11.)
 ## Few-Shot Korean Font Generation based on Hangul Composability
 
+#### J. Park, A. U. Hassan and J. Choi, "Few-Shot Korean Font Generation based on Hangul Composability," KIPS Transactions on Software and Data Engineering, vol. 10, no. 11, pp. 473-482, 2021. DOI: https://doi.org/10.3745/KTSDE.2021.10.11.473.
+
  [KIPS](http://ktsde.kips.or.kr/digital-library/25120)
  KIPS Transactions on Software and Data Engineering, Vol. 10, No. 11, pp. 473-482, Nov. 2021
  [PDF](http://ktsde.kips.or.kr/digital-library/25120)
@@ -28,4 +30,9 @@ Although several Hangul generation models using deep learning have been introduc
 
 ![image](https://user-images.githubusercontent.com/62954678/158782232-f7972eb2-d2d1-4973-9c24-970ea9a2b4b0.png)
 
+### Get Started
 
+#### Installation
+```bash
+conda create --name tutorial-TF python=3.6.8
+```
