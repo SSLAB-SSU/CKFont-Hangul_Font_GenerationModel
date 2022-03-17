@@ -10,27 +10,27 @@
  
  ### 51개 구성요소를 모두 포함하는 최소 글자 28글자로 모든 한글을 다양한 폰트 스타일로 생성 가능
 ---
-### Abstract
+### Abstract  
+
 Although several Hangul generation models using deep learning have been introduced, they require a lot of data, have a complex structure, requires considerable time and resources, and often fail in style conversion. This paper proposes a model CKFont using the components of the initial, middle, and final components of Hangul as a way to compensate for these problems. The CKFont model is an end-to-end Hangul generation model based on GAN, and it can generate all Hangul in various styles with 28 characters and components of first, middle, and final components of Hangul characters. By acquiring local style information from components, the information is more accurate than global information acquisition, and the result of style conversion improves as it can reduce information loss.  This is a model that uses the minimum number of characters among known models, and it is an efficient model that reduces style conversion failures, has a concise structure, and saves time and resources. The concept using components can be used for various image transformations and compositing as well as transformations of other languages.
+
 ---
 ### Model Aracitecture
 ---
-![image](https://user-images.githubusercontent.com/62954678/158781743-555f163e-9b9d-4651-8cf5-1ec8a66341da.png)
+<!--    ![image](https://user-images.githubusercontent.com/62954678/158781743-555f163e-9b9d-4651-8cf5-1ec8a66341da.png) -->
+   <img src = "https://user-images.githubusercontent.com/62954678/158781743-555f163e-9b9d-4651-8cf5-1ec8a66341da.png" width="1000">
+   
 ---
 #### Sample 28 Characters
 ---
-![image](https://user-images.githubusercontent.com/62954678/158781900-59c99854-d234-49e3-b3bf-cd1e741cc361.png)
+   > <img src = "https://user-images.githubusercontent.com/62954678/158781900-59c99854-d234-49e3-b3bf-cd1e741cc361.png" width="800" height = "200"> 
 ---
 ### Results
 ---
-![image](https://user-images.githubusercontent.com/62954678/158782059-653f71b5-bae9-48db-9d22-16986dbadabd.png)
-
-![image](https://user-images.githubusercontent.com/62954678/158782154-d98b432d-4c60-4f0c-9be2-54515dd1f560.png)
-
-![image](https://user-images.githubusercontent.com/62954678/158782208-dc8f2c9a-bcd4-49fd-8e93-f285fc96e397.png)
-
-![image](https://user-images.githubusercontent.com/62954678/158782232-f7972eb2-d2d1-4973-9c24-970ea9a2b4b0.png)
-
+   <img src = "https://user-images.githubusercontent.com/62954678/158782059-653f71b5-bae9-48db-9d22-16986dbadabd.png" width="1000" height = "400">   
+   
+   <img src = "https://user-images.githubusercontent.com/62954678/158782154-d98b432d-4c60-4f0c-9be2-54515dd1f560.png" width="300" height = "400"> >>  <img src = "https://user-images.githubusercontent.com/62954678/158782208-dc8f2c9a-bcd4-49fd-8e93-f285fc96e397.png" width="300" height = "400">   >>    <img src = "https://user-images.githubusercontent.com/62954678/158782232-f7972eb2-d2d1-4973-9c24-970ea9a2b4b0.png" width="300" height = "400">
+ 
 ### Get Started
 ---
 #### Installation
@@ -44,9 +44,10 @@ conda install -c anaconda tensorflow-gpu=1.13.1
 1. Generate Source font and split chars images
 ```bash
 python ./tools/src-font-image-generator.py
-python ./tools/src-split-font-image-generator.py
+python ./tools/src-split-font-image-generator.py  
 ```  
-2.Generate Target font and split chars images
+
+2. Generate Target font and split chars images
 ```bash
 python ./tools/trg-font-image-generator.py
 python ./tools/trg-split-font-image-generator.py
@@ -55,7 +56,8 @@ python ./tools/trg-split-font-image-generator.py
 ```bash
 python ./tools/combine_images.py --input_dir src-image-data/images --b_dir trg-image-data/images --c_dir tgt-split-image-data/images --operation combine
 ```  
-4.Convert images to TFRecords
+
+4. Convert images to TFRecords
 ```bash
 python ./tools/images-to-tfrecords.py
 ```  
@@ -91,11 +93,8 @@ Special thanks to the following works for sharing their code and dataset.
 ---
 ### Citation
 ---
-[IEEE Style]
-J. Park, A. U. Hassan and J. Choi, "Few-Shot Korean Font Generation based on Hangul Composability," KIPS Transactions on Software and Data Engineering, vol. 10, no. 11, pp. 473-482, 2021. DOI: https://doi.org/10.3745/KTSDE.2021.10.11.473.
+J. Park, A. U. Hassan and J. Choi, "Few-Shot Korean Font Generation based on Hangul Composability," KIPS Transactions on Software and Data Engineering, vol. 10, no. 11, pp. 473-482, 2021. DOI: https://doi.org/10.3745/KTSDE.2021.10.11.473.  
 
-[ACM Style]
-Jangkyoung Park, Ammar Ul Hassan, and Jaeyoung Choi. 2021. Few-Shot Korean Font Generation based on Hangul Composability. KIPS Transactions on Software and Data Engineering, 10, 11, (2021), 473-482. DOI: https://doi.org/10.3745/KTSDE.2021.10.11.473.
 ---
 ### Copyright
 ---
