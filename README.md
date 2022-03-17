@@ -36,4 +36,62 @@ Although several Hangul generation models using deep learning have been introduc
 #### Installation
 ```bash
 conda create --name tutorial-TF python=3.6.8
+conda activate tutorial-TF or activate tutorial-TF
+conda install -c anaconda tensorflow-gpu=1.13.1
 ```
+#### Datasets
+---
+1. Generate Source font and split chars images
+```bash
+python ./tools/src-font-image-generator.py
+python ./tools/src-split-font-image-generator.py
+```
+
+2.Generate Target font and split chars images
+```bash
+python ./tools/trg-font-image-generator.py
+python ./tools/trg-split-font-image-generator.py
+```
+3. Combine source, target, and target split imgs
+```bash
+python ./tools/combine_images.py --input_dir src-image-data/images --b_dir trg-image-data/images --c_dir tgt-split-image-data/images --operation combine
+```
+4.Convert images to TFRecords
+```bash
+python ./tools/images-to-tfrecords.py
+```
+#### Training the model
+##### Pre-training the model
+```bash
+python main.py --mode train --output_dir trained_model --max_epochs 25 
+```
+##### Finetuning the model
+```bash
+python main.py --mode train --output_dir finetuned_model --max_epochs 500 --checkpoint trained_model/ 
+```
+#### Testing the model
+Generate images just like before but this time use a different module for creating testing TFRecords with the below mentioned command.
+
+1.Convert images to TFRecords
+```bash
+python ./tools/test-images-to-tfrecords.py
+```
+#### Generating results
+```bash
+python main.py --mode test --output_dir testing_results --checkpoint finetuned_model
+```
+### Acknowledgements
+This code is inspired by the pix2pix tensorflow project.
+
+Special thanks to the following works for sharing their code and dataset.
+
+tensorflow-hangul-recognition
+pix2pix
+### Citation
+[IEEE Style]
+J. Park, A. U. Hassan and J. Choi, "Few-Shot Korean Font Generation based on Hangul Composability," KIPS Transactions on Software and Data Engineering, vol. 10, no. 11, pp. 473-482, 2021. DOI: https://doi.org/10.3745/KTSDE.2021.10.11.473.
+
+[ACM Style]
+Jangkyoung Park, Ammar Ul Hassan, and Jaeyoung Choi. 2021. Few-Shot Korean Font Generation based on Hangul Composability. KIPS Transactions on Software and Data Engineering, 10, 11, (2021), 473-482. DOI: https://doi.org/10.3745/KTSDE.2021.10.11.473.
+### Copyright
+The code and other helping modules are only allowed for PERSONAL and ACADEMIC usage.
