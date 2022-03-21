@@ -49,12 +49,12 @@ python ./tools/src-split-font-image-generator.py
 
 2. Generate Target font and split chars images
 ```bash
-python ./tools/trg-font-image-generator.py
-python ./tools/trg-split-font-image-generator.py
+python ./tools/tgt-font-image-generator.py
+python ./tools/tgt-split-font-image-generator.py
 ```  
 3. Combine source, target, and target split imgs
 ```bash
-python ./tools/combine_images.py --input_dir src-image-data/images --b_dir trg-image-data/images --c_dir tgt-split-image-data/images --operation combine
+python ./tools/combine_images.py --input_dir src-image-data/images --b_dir tgt-image-data/images --c_dir tgt-split-image-data/images --operation combine
 ```  
 
 4. Convert images to TFRecords
