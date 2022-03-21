@@ -35,53 +35,53 @@ Although several Hangul generation models using deep learning have been introduc
 ---
 #### Installation
 ```bash
-conda create --name tutorial-TF python=3.6.8
-conda activate tutorial-TF or activate tutorial-TF
-conda install -c anaconda tensorflow-gpu=1.13.1
+ >> conda create --name tutorial-TF python=3.6.8
+ >> conda activate tutorial-TF or activate tutorial-TF
+ >> conda install -c anaconda tensorflow-gpu=1.13.1
 ```
 #### Datasets
 ---  
 1. Generate Source font and split chars images
 ```bash
-python ./tools/src-font-image-generator.py
-python ./tools/src-split-font-image-generator.py  
+ >> python ./tools/src-font-image-generator.py
+ >> python ./tools/src-split-font-image-generator.py  
 ```  
 
 2. Generate Target font and split chars images
 ```bash
-python ./tools/tgt-font-image-generator.py
-python ./tools/tgt-split-font-image-generator.py
+ >> python ./tools/tgt-font-image-generator.py
+ >> python ./tools/tgt-split-font-image-generator.py
 ```  
 3. Combine source, target, and target split imgs
 ```bash
-python ./tools/combine_images.py --input_dir src-image-data/images --b_dir tgt-image-data/images --c_dir tgt-split-image-data/images --operation combine
+ >> python ./tools/combine_images.py --input_dir src-image-data/images --b_dir tgt-image-data/images --c_dir tgt-split-image-data/images --operation combine
 ```  
 
 4. Convert images to TFRecords
 ```bash
-python ./tools/images-to-tfrecords.py
+ >> python ./tools/images-to-tfrecords.py
 ```  
 ---  
 ### Training the model
 ---
 #### Pre-training the model
 ```bash
-python main.py --mode train --output_dir trained_model --max_epochs 25 
+ >> python main.py --mode train --output_dir trained_model --max_epochs 25 
 ```
 #### Finetuning the model
 ---
 ```bash
-python main.py --mode train --output_dir finetuned_model --max_epochs 500 --checkpoint trained_model/ 
+ >> python main.py --mode train --output_dir finetuned_model --max_epochs 500 --checkpoint trained_model/ 
 ```
 ### Testing the model
 ---  
 1.Convert images to TFRecords
 ```bash
-python ./tools/test-images-to-tfrecords.py
+ >> python ./tools/test-images-to-tfrecords.py
 ```  
 ### Generating results
 ```bash
-python main.py --mode test --output_dir testing_results --checkpoint finetuned_model
+ >> python main.py --mode test --output_dir testing_results --checkpoint finetuned_model
 ```
 ### Acknowledgements
 ---
