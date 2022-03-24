@@ -32,7 +32,7 @@ Although several Hangul generation models using deep learning have been introduc
  > <img src = "https://user-images.githubusercontent.com/62954678/160011303-6534d8d9-9b0a-49d5-9d62-3823ad409b9a.png" width="800" height = "150"> 
 ---
 
-### Model Aracitecture
+### Model Architecture
 ---
 <!--    ![image](https://user-images.githubusercontent.com/62954678/158781743-555f163e-9b9d-4651-8cf5-1ec8a66341da.png) -->
 > <img src = "https://user-images.githubusercontent.com/62954678/158781743-555f163e-9b9d-4651-8cf5-1ec8a66341da.png" width="900" height = "400">
