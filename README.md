@@ -11,7 +11,7 @@
  ### 51개 구성요소를 모두 포함하는 최소 글자 28글자로 모든 한글을 다양한 폰트 스타일로 생성 가능
 ---
 ### Abstract  
-'''
+
 Although several Hangul generation models using deep learning have been introduced, they require a lot of data, have a complex structure, requires considerable time and resources, and often fail in style conversion. This paper proposes a model CKFont using the components of the initial, middle, and final components of Hangul as a way to compensate for these problems. The CKFont model is an end-to-end Hangul generation model based on GAN, and it can generate all Hangul in various styles with 28 characters and components of first, middle, and final components of Hangul characters. By acquiring local style information from components, the information is more accurate than global information acquisition, and the result of style conversion improves as it can reduce information loss.  This is a model that uses the minimum number of characters among known models, and it is an efficient model that reduces style conversion failures, has a concise structure, and saves time and resources. The concept using components can be used for various image transformations and compositing as well as transformations of other languages.
 
 ---
@@ -24,18 +24,18 @@ Although several Hangul generation models using deep learning have been introduc
 
 ### 한글 구성요소
 ---
-   > <img src = "https://user-images.githubusercontent.com/62954678/159656868-5070c414-4b8f-4a40-bdc2-3dae7dac24bb.png" width="1000">
+ > <img src = "https://user-images.githubusercontent.com/62954678/160010292-d1d17e89-545b-4f69-be29-d76be8176aef.png" width="900" height = "200">
 ---
 
 #### Sample 28 Characters
 ---
-   > <img src = "https://user-images.githubusercontent.com/62954678/158781900-59c99854-d234-49e3-b3bf-cd1e741cc361.png" width="600" height = "100"> 
+ > <img src = "https://user-images.githubusercontent.com/62954678/160011303-6534d8d9-9b0a-49d5-9d62-3823ad409b9a.png" width="800" height = "150"> 
 ---
 
 ### Model Aracitecture
 ---
 <!--    ![image](https://user-images.githubusercontent.com/62954678/158781743-555f163e-9b9d-4651-8cf5-1ec8a66341da.png) -->
-> <img src = "https://user-images.githubusercontent.com/62954678/158781743-555f163e-9b9d-4651-8cf5-1ec8a66341da.png" width="1000">
+> <img src = "https://user-images.githubusercontent.com/62954678/158781743-555f163e-9b9d-4651-8cf5-1ec8a66341da.png" width="900" height = "400">
    
 ---
 
