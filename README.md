@@ -43,7 +43,7 @@ Although several Hangul generation models using deep learning have been introduc
 ---
 > <img src = "https://user-images.githubusercontent.com/62954678/158782059-653f71b5-bae9-48db-9d22-16986dbadabd.png" width="1000" height = "400">   
    
-> <img src = "https://user-images.githubusercontent.com/62954678/158782154-d98b432d-4c60-4f0c-9be2-54515dd1f560.png" width="300" height = "400"> >>  <img src = "https://user-images.githubusercontent.com/62954678/158782208-dc8f2c9a-bcd4-49fd-8e93-f285fc96e397.png" width="300" height = "400">   >>    <img src = "https://user-images.githubusercontent.com/62954678/158782232-f7972eb2-d2d1-4973-9c24-970ea9a2b4b0.png" width="300" height = "400">
+> <img src = "https://user-images.githubusercontent.com/62954678/158782154-d98b432d-4c60-4f0c-9be2-54515dd1f560.png" width="300" height = "300"> >>  <img src = "https://user-images.githubusercontent.com/62954678/158782208-dc8f2c9a-bcd4-49fd-8e93-f285fc96e397.png" width="300" height = "300">   >>    <img src = "https://user-images.githubusercontent.com/62954678/158782232-f7972eb2-d2d1-4973-9c24-970ea9a2b4b0.png" width="300" height = "300">
  
 ### Get Started
 ---
