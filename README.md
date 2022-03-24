@@ -34,16 +34,14 @@ Although several Hangul generation models using deep learning have been introduc
 
 ### Model Architecture
 ---
-<!--    ![image](https://user-images.githubusercontent.com/62954678/158781743-555f163e-9b9d-4651-8cf5-1ec8a66341da.png) -->
-> <img src = "https://user-images.githubusercontent.com/62954678/158781743-555f163e-9b9d-4651-8cf5-1ec8a66341da.png" width="900" height = "400">
-   
+> <img src = "https://user-images.githubusercontent.com/62954678/160014081-029fe0e8-97be-4314-aa4b-7c3656f0749f.png" width="900" height = "400">
 ---
 
 ### Results
 ---
-> <img src = "https://user-images.githubusercontent.com/62954678/158782059-653f71b5-bae9-48db-9d22-16986dbadabd.png" width="1000" height = "400">   
-   
-> <img src = "https://user-images.githubusercontent.com/62954678/158782154-d98b432d-4c60-4f0c-9be2-54515dd1f560.png" width="300" height = "300"> >>  <img src = "https://user-images.githubusercontent.com/62954678/158782208-dc8f2c9a-bcd4-49fd-8e93-f285fc96e397.png" width="300" height = "300">   >>    <img src = "https://user-images.githubusercontent.com/62954678/158782232-f7972eb2-d2d1-4973-9c24-970ea9a2b4b0.png" width="300" height = "300">
+> <img src = "https://user-images.githubusercontent.com/62954678/160014538-fe90929d-fa03-4e24-a57e-e1cefa89ae63.png" width="1000" height = "400">   
+
+>   <img src = "https://user-images.githubusercontent.com/62954678/160014871-b4d6603a-e242-477f-a883-a4b013c34f78.png" width="300" height = "300"> >>    <img src = "https://user-images.githubusercontent.com/62954678/160014967-1c5b88df-05db-4dc2-95dd-517878c3be10.png" width="300" height = "300">   >>      <img src = "https://user-images.githubusercontent.com/62954678/160014802-ffae9d93-e0d5-426e-80d4-9e94f4b01830.png" width="250" height = "300">
  
 ### Get Started
 ---
