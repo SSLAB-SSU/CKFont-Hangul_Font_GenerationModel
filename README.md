@@ -24,7 +24,7 @@ Although several Hangul generation models using deep learning have been introduc
 
 ### 한글 구성요소
 ---
- > <img src = "https://user-images.githubusercontent.com/62954678/160010292-d1d17e89-545b-4f69-be29-d76be8176aef.png" width="900" height = "200">
+ > <img src = "https://user-images.githubusercontent.com/62954678/160042485-a7ddb4d4-031a-435c-95f4-402842a74d88.png" width="900" height = "200">
 ---
 
 #### Sample 28 Characters
@@ -87,7 +87,7 @@ Although several Hangul generation models using deep learning have been introduc
 ```
 ### Testing the model
 ---  
-1.Convert images to TFRecords
+Convert images to TFRecords
 ```bash
  >> python ./tools/test-images-to-tfrecords.py
 ```  
