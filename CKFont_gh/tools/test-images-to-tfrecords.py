@@ -12,12 +12,12 @@ import tensorflow as tf
 SCRIPT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 # Default data paths.
-DEFAULT_LABEL_FILE_1st = os.path.join(SCRIPT_PATH,
-                                  '../labels/hgl_cho.txt')
-DEFAULT_LABEL_FILE_2nd = os.path.join(SCRIPT_PATH,
-                                  '../labels/hgl_jung.txt')
-DEFAULT_LABEL_FILE_3rd = os.path.join(SCRIPT_PATH,
-                                  '../labels/hgl_jong.txt')
+# DEFAULT_LABEL_FILE_1st = os.path.join(SCRIPT_PATH,
+#                                   '../labels/hgl_cho.txt')
+# DEFAULT_LABEL_FILE_2nd = os.path.join(SCRIPT_PATH,
+#                                   '../labels/hgl_jung.txt')
+# DEFAULT_LABEL_FILE_3rd = os.path.join(SCRIPT_PATH,
+#                                   '../labels/hgl_jong.txt')
 DEFAULT_OUTPUT_DIR = os.path.join(SCRIPT_PATH, '../test-tfrecords-output')
 DEFAULT_IMAGES_DIR = os.path.join(SCRIPT_PATH, '../combine-image-data/images')
 DEFAULT_NUM_SHARDS_TRAIN = 1
